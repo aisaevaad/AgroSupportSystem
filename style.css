@@ -1,5 +1,30 @@
 body {
     background-color: #fff;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    flex: 1;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 36px;
+
+}
+
+h5 {
+    font-size: 18px;
+    margin: 0;
+    font-weight: 600;
 }
 
 .carousel-item {
@@ -38,12 +63,31 @@ body {
 }
 
 .dropdown-btn {
-    background-color: #fff;
+    background-color: #f8f9fa;
     text-decoration: none;
     color: #000000a6;
 }
 
-.dropdown-bt:hover {
-    color: #000c00;
-}
+.footer {
+    background-color: #f8f9fa;
+  }
+  
+  .footer a {
+    transition: color 0.5s ease;
+  }
 
+  .footer a:hover {
+    color: #074f08; /* Темно-зеленый цвет при наведении */
+  }
+  
+  .footer i {
+    font-size: 1.2rem; /* Размер иконок */
+  }
+  
+  .footer h5, .footer h6 {
+    letter-spacing: 1px; /* Расстояние между буквами для заголовков */
+  }
+
+.row {
+    border-top: 1px #000c00;
+}
