@@ -62,32 +62,44 @@ h5 {
     padding: 0;
 }
 
+header {
+    background-color: #f3fdef;
+}
+
 .dropdown-btn {
-    background-color: #f8f9fa;
+    background-color: #f3fdef;
     text-decoration: none;
     color: #000000a6;
 }
 
 .footer {
-    background-color: #f8f9fa;
+    background-color: #f3fdef;
   }
   
   .footer a {
-    transition: color 0.5s ease;
+    transition: text 0.5s ease;
   }
 
   .footer a:hover {
-    color: #074f08; /* Темно-зеленый цвет при наведении */
+    color: #198754; 
   }
   
   .footer i {
-    font-size: 1.2rem; /* Размер иконок */
+    font-size: 1.2rem; 
   }
   
   .footer h5, .footer h6 {
-    letter-spacing: 1px; /* Расстояние между буквами для заголовков */
+    letter-spacing: 1px; 
   }
 
 .row {
     border-top: 1px #000c00;
+}
+
+.dropdown-item:hover {
+    transition: all 0.5s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #dbfcce;
 }
