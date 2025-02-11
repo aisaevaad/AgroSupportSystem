@@ -1,0 +1,49 @@
+body {
+    background-color: #fff;
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.container {
+    width: 90%;
+    left: 5%;
+}
+
+.carousel-inner {
+    border-radius: 20px;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    position: fixed;
+    top: 0.5%;
+    left: 48%;
+}
+
+.nav-item {
+    padding-left: 12px;
+}
+
+.navbar-nav {
+    padding: 0;
+}
+
+.dropdown-btn {
+    background-color: #fff;
+    text-decoration: none;
+    color: #000000a6;
+}
+
+.dropdown-bt:hover {
+    color: #000c00;
+}
+

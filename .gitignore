@@ -5,6 +5,8 @@ __pycache__/
 .vscode
 .idea
 
+bootstrap-5.3.3-dist/
+
 db.sqlite3
 media/
 
