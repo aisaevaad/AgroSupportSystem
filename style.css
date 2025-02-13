@@ -129,3 +129,28 @@ header {
 .btn-carousel:hover {
     font-weight: 500;
 }
+
+.custom-accordion-button {
+  background-color: rgba(0, 128, 0, 0.1); 
+  color: #155724; 
+  border: none; 
+  transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.custom-accordion-button:hover {
+  background-color: rgba(0, 128, 0, 0.2); 
+  color: #198754;
+}
+
+.custom-accordion-button:not(.collapsed) {
+  background-color: rgba(0, 128, 0, 0.3); 
+  color: #198754; 
+  box-shadow: none; 
+}
+
+
+.accordion-body {
+  background-color: rgba(0, 128, 0, 0.05); 
+  color: #000000a6; 
+  border: none; 
+}
