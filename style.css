@@ -130,37 +130,124 @@ header {
 }
 
 .btn-carousel {
-    background-color: none;
-    color: #fff;
-    font-size: 22px;
-    border: none;
+  background-color: none;
+  color: #fff;
+  font-size: 22px;
+  border: none;
 }
 
 .btn-carousel:hover {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 .custom-accordion-button {
-  background-color: rgba(0, 128, 0, 0.1); 
-  color: #155724; 
-  border: none; 
-  transition: background-color 0.3s ease, color 0.3s ease; 
+  background-color: rgba(0, 128, 0, 0.1);
+  color: #155724;
+  border: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .custom-accordion-button:hover {
-  background-color: rgba(0, 128, 0, 0.2); 
+  background-color: rgba(0, 128, 0, 0.2);
   color: #198754;
 }
 
 .custom-accordion-button:not(.collapsed) {
-  background-color: rgba(0, 128, 0, 0.3); 
-  color: #198754; 
-  box-shadow: none; 
+  background-color: rgba(0, 128, 0, 0.3);
+  color: #198754;
+  box-shadow: none;
 }
 
-
 .accordion-body {
-  background-color: rgba(0, 128, 0, 0.05); 
-  color: #000000a6; 
-  border: none; 
+  background-color: rgba(0, 128, 0, 0.05);
+  color: #000000a6;
+  border: none;
+}
+
+/* index end */
+
+.culture-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.culture-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.culture-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.culture-card .card-body {
+  padding: 1.5rem;
+}
+
+.culture-card h5 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+}
+
+.culture-card p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.culture-card .btn {
+  background-color: #28a745;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.culture-card .btn:hover {
+  background-color: #1e7e34;
+}
+
+/* Стили для карточек удобрений */
+.fertilizer-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.fertilizer-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.fertilizer-card .card-body-f {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.fertilizer-card i {
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+.fertilizer-card h5 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+}
+
+.fertilizer-card p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.fertilizer-card .btn {
+  border: 1px solid #28a745;
+  color: #28a745;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.fertilizer-card .btn:hover {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.card-body-f {
+  height: 280px;
 }

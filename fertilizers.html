@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- icons bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
     <!-- css bootstrap -->
     <link
       rel="stylesheet"
@@ -27,40 +30,55 @@
                 <a class="nav-link" href="/">Главная</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Калькулятор удобрений</a>
+                <a class="nav-link" href="agro-calc.html">Калькулятор удобрений</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">О проекте</a>
+                <a class="nav-link" href="about.html">О проекте</a>
               </li>
             </ul>
-              
+
             <ul class="navbar-nav">
               <li class="nav-item"></li>
               <div class="dropdown">
-                <a class="dropdown-btn nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                <a
+                  class="dropdown-btn nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
                   Справочник культур
                 </a>
-              
+
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">Помидоры</a></li>
-                  <li><a class="dropdown-item" href="#">Огурцы</a></li>
-                  <li><a class="dropdown-item" href="#">Баклажаны</a></li>
+                  <li><a class="dropdown-item" href="cultures\tomatoes.html">Помидоры</a></li>
+                  <li><a class="dropdown-item" href="cultures\cucumbers.html">Огурцы</a></li>
+                  <li><a class="dropdown-item" href="cultures\eggplants.html">Баклажаны</a></li>
                 </ul>
-              </div> 
-              </li>
+              </div>
               <li class="nav-item"></li>
               <div class="dropdown">
-                <a class="dropdown-btn nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                <a
+                  class="dropdown-btn nav-link dropdown-toggle active"
+                  href="#"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
                   Удобрения
                 </a>
-              
+
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">Органические</a></li>
-                  <li><a class="dropdown-item" href="#">Минеральные</a></li>
-                  <li><a class="dropdown-item" href="#">Азотные</a></li>
+                  <li><a class="dropdown-item" href="fertilizers\organic-fertilizers.html">Органические</a></li>
+                  <li><a class="dropdown-item" href="fertilizers\mineral-fertilizers.html">Минеральные</a></li>
+                  <li><a class="dropdown-item" href="fertilizers\nitrogen-fertilizers.html">Азотные</a></li>
+                  <li><a class="dropdown-item" href="fertilizers\phosphorus-fertilizers.html">Фосфорные</a></li>
+                  <li><a class="dropdown-item" href="fertilizers\potassium-fertilizers.html">Калийные</a></li>
+                  <li><a class="dropdown-item" href="fertilizers\complex-fertilizers.html">Комплексные</a></li>
                 </ul>
-              </div> 
-              </li>
+              </div>
             </ul>
           </div>
         </div>
@@ -68,46 +86,211 @@
     </header>
 
     <div class="container">
-        <main>
+      <main>
+        <div class="container">
+          <h2 class="text-center fw-bold mb-3 text-success mt-4">
+            Справочник удобрений
+          </h2>
+          <p class="text-center lead text-muted mb-5">
+            Здесь вы найдете информацию о различных видах удобрений, их
+            свойствах и применении.
+          </p>
 
-        </main>
+          <!-- Перечень удобрений -->
+          <div class="row g-4 mb-5">
+            <!-- Удобрение 1: Органические -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card fertilizer-card border-0 shadow-sm rounded-4">
+                <div class="card-body-f">
+                  <i class="bi bi-droplet-fill fs-1 text-success mb-3"></i>
+                  <h5 class="card-title fw-bold">Органические удобрения</h5>
+                  <p class="card-text small text-muted">
+                    Натуральные удобрения, получаемые из органических отходов.
+                    Идеально подходят для улучшения структуры почвы.
+                  </p>
+                  <a
+                    href="fertilizers\organic-fertilizers.html"
+                    class="btn btn-outline-success"
+                    >Подробнее</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Удобрение 2: Минеральные -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card fertilizer-card border-0 shadow-sm rounded-4">
+                <div class="card-body-f">
+                  <i class="bi bi-box-seam fs-1 text-success mb-3"></i>
+                  <h5 class="card-title fw-bold">Минеральные удобрения</h5>
+                  <p class="card-text small text-muted">
+                    Содержат необходимые минералы для растений, такие как азот,
+                    фосфор и калий. Эффективны для быстрого роста.
+                  </p>
+                  <a
+                    href="fertilizers\mineral-fertilizers.html"
+                    class="btn btn-outline-success"
+                    >Подробнее</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Удобрение 3: Азотные -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card fertilizer-card border-0 shadow-sm rounded-4">
+                <div class="card-body-f">
+                  <i class="bi bi-bar-chart-line fs-1 text-success mb-3"></i>
+                  <h5 class="card-title fw-bold">Азотные удобрения</h5>
+                  <p class="card-text small text-muted">
+                    Обогащают почву азотом, который необходим для роста зеленой
+                    массы растений.
+                  </p>
+                  <a
+                    href="fertilizers\nitrogen-fertilizers.html"
+                    class="btn btn-outline-success"
+                    >Подробнее</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Удобрение 4: Фосфорные -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card fertilizer-card border-0 shadow-sm rounded-4">
+                <div class="card-body-f">
+                  <i class="bi bi-flower1 fs-1 text-success mb-3"></i>
+                  <h5 class="card-title fw-bold">Фосфорные удобрения</h5>
+                  <p class="card-text small text-muted">
+                    Способствуют развитию корневой системы и повышению
+                    урожайности.
+                  </p>
+                  <a
+                    href="fertilizers\phosphorus-fertilizers.html"
+                    class="btn btn-outline-success"
+                    >Подробнее</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Удобрение 5: Калийные -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card fertilizer-card border-0 shadow-sm rounded-4">
+                <div class="card-body-f">
+                  <i class="bi bi-sun-fill fs-1 text-success mb-3"></i>
+                  <h5 class="card-title fw-bold">Калийные удобрения</h5>
+                  <p class="card-text small text-muted">
+                    Помогают растениям противостоять засухе и болезням, улучшают
+                    качество плодов.
+                  </p>
+                  <a
+                    href="fertilizers\potassium-fertilizers.html"
+                    class="btn btn-outline-success"
+                    >Подробнее</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Удобрение 6: Комплексные -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card fertilizer-card border-0 shadow-sm rounded-4">
+                <div class="card-body-f">
+                  <i class="bi bi-puzzle-fill fs-1 text-success mb-3"></i>
+                  <h5 class="card-title fw-bold">Комплексные удобрения</h5>
+                  <p class="card-text small text-muted">
+                    Содержат несколько питательных элементов, обеспечивающих
+                    сбалансированное питание растений.
+                  </p>
+                  <a
+                    href="fertilizers\complex-fertilizers.html"
+                    class="btn btn-outline-success"
+                    >Подробнее</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
-    
+
     <footer class="footer rounded-1 text-dark pt-5">
       <div class="container">
         <div class="row mb-4">
           <div class="col-md-4">
             <h4 class="fw-bold text-success">АгроКалькулятор</h4>
             <p class="small text-muted">
-              Информационно-аналитическая система поддержки принятия решений при выращивании овощных культур с интеграцией модуля расчета удобрений.
+              Информационно-аналитическая система поддержки принятия решений при
+              выращивании овощных культур с интеграцией модуля расчета
+              удобрений.
             </p>
           </div>
-    
+
           <div class="col-md-3 ps-5 ms-5">
             <h5 class="fw-bold text-success">Навигация</h5>
             <ul class="list-unstyled small">
-              <li><a href="/" class="nav-link text-decoration-none">Главная</a></li>
-              <li><a href="#" class="nav-link text-decoration-none">Справочник культур</a></li>
-              <li><a href="#" class="nav-link text-decoration-none">Калькулятор удобрений</a></li>
-              <li><a href="#" class="nav-link text-decoration-none">Удобрения</a></li>
-              <li><a href="#" class="nav-link text-decoration-none">О проекте</a></li>
+              <li>
+                <a href="/" class="nav-link text-decoration-none">Главная</a>
+              </li>
+              <li>
+                <a href="cultures.html" class="nav-link text-decoration-none"
+                  >Справочник культур</a
+                >
+              </li>
+              <li>
+                <a href="agro-calc.html" class="nav-link text-decoration-none"
+                  >Калькулятор удобрений</a
+                >
+              </li>
+              <li>
+                <a href="fertilizers.html" class="nav-link text-decoration-none"
+                  >Удобрения</a
+                >
+              </li>
+              <li>
+                <a href="about.html" class="nav-link text-decoration-none"
+                  >О проекте</a
+                >
+              </li>
             </ul>
           </div>
-    
+
           <div class="col-md-4 ps-5 ms-5">
             <h5 class="fw-bold text-success">Контакты</h5>
             <ul class="list-unstyled small">
-              <li><i class="bi bi-envelope me-2 text-success"></i><a href="mailto:agrosupportsystem@mail.ru" class="text-muted text-decoration-none">agrosupportsystem@mail.ru</a></li>
-              <li><i class="bi bi-telephone me-2 text-success"></i><a href="tel:+797777777" class="text-muted text-decoration-none">+7 (977) 777-77-77</a></li>
+              <li>
+                <i class="bi bi-envelope me-2 text-success"></i
+                ><a
+                  href="mailto:agrosupportsystem@mail.ru"
+                  class="text-muted text-decoration-none"
+                  >agrosupportsystem@mail.ru</a
+                >
+              </li>
+              <li>
+                <i class="bi bi-telephone me-2 text-success"></i
+                ><a
+                  href="tel:+797777777"
+                  class="text-muted text-decoration-none"
+                  >+7 (977) 777-77-77</a
+                >
+              </li>
             </ul>
             <div class="mt-3">
-              <a href="#" class="text-success me-3"><i class="bi bi-telegram fs-5"></i></a>
-              <a href="#" class="text-success me-3"><i class="bi bi-whatsapp fs-5"></i></a>
-              <a href="#" class="text-success me-3"><i class="bi bi-person-plus-fill fs-5"></i></a>
+              <a href="#" class="text-success me-3"
+                ><i class="bi bi-telegram fs-5"></i
+              ></a>
+              <a href="#" class="text-success me-3"
+                ><i class="bi bi-whatsapp fs-5"></i
+              ></a>
+              <a href="#" class="text-success me-3"
+                ><i class="bi bi-person-plus-fill fs-5"></i
+              ></a>
             </div>
           </div>
         </div>
-    
+
         <div class="row border-top py-4">
           <div class="col text-center small text-muted">
             &copy; 2025 AgroSupportSystem. Все права защищены.
