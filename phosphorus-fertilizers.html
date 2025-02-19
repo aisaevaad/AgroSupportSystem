@@ -15,7 +15,7 @@
     />
     <!-- css -->
     <link rel="stylesheet" href="style.css" />
-    <title>Справочник удобрений</title>
+    <title>Фосфорные удобрения</title>
   </head>
   <body>
     <header class="sticky-top navbar-expand-lg navbar-light">
@@ -30,7 +30,9 @@
                 <a class="nav-link" href="index.html">Главная</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="agro-calc.html">Калькулятор удобрений</a>
+                <a class="nav-link" href="agro-calc.html"
+                  >Калькулятор удобрений</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="about.html">О проекте</a>
@@ -60,7 +62,7 @@
               <li class="nav-item"></li>
               <div class="dropdown">
                 <a
-                  class="dropdown-btn nav-link dropdown-toggle active"
+                  class="dropdown-btn nav-link dropdown-toggle"
                   href="#"
                   role="button"
                   id="dropdownMenuLink"
@@ -74,7 +76,7 @@
                   <li><a class="dropdown-item" href="organic-fertilizers.html">Органические</a></li>
                   <li><a class="dropdown-item" href="mineral-fertilizers.html">Минеральные</a></li>
                   <li><a class="dropdown-item" href="nitrogen-fertilizers.html">Азотные</a></li>
-                  <li><a class="dropdown-item" href="phosphorus-fertilizers.html">Фосфорные</a></li>
+                  <li><a class="dropdown-item  active bg-success" href="phosphorus-fertilizers.html">Фосфорные</a></li>
                   <li><a class="dropdown-item" href="potassium-fertilizers.html">Калийные</a></li>
                   <li><a class="dropdown-item" href="complex-fertilizers.html">Комплексные</a></li>
                 </ul>
@@ -86,134 +88,7 @@
     </header>
 
     <div class="container">
-      <main>
-        <div class="container">
-          <h2 class="text-center fw-bold mb-3 text-success mt-4">
-            Справочник удобрений
-          </h2>
-          <p class="text-center lead text-muted mb-5">
-            Здесь вы найдете информацию о различных видах удобрений, их
-            свойствах и применении.
-          </p>
-
-          <!-- Перечень удобрений -->
-          <div class="row g-4 mb-5">
-            <!-- Удобрение 1: Органические -->
-            <div class="col-md-6 col-lg-4">
-              <div class="card fertilizer-card border-0 shadow-sm rounded-4">
-                <div class="card-body-f">
-                  <i class="bi bi-droplet-fill fs-1 text-success mb-3"></i>
-                  <h5 class="card-title fw-bold">Органические удобрения</h5>
-                  <p class="card-text small text-muted">
-                    Натуральные удобрения, получаемые из органических отходов.
-                    Идеально подходят для улучшения структуры почвы.
-                  </p>
-                  <a
-                    href="organic-fertilizers.html"
-                    class="btn btn-outline-success"
-                    >Подробнее</a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <!-- Удобрение 2: Минеральные -->
-            <div class="col-md-6 col-lg-4">
-              <div class="card fertilizer-card border-0 shadow-sm rounded-4">
-                <div class="card-body-f">
-                  <i class="bi bi-box-seam fs-1 text-success mb-3"></i>
-                  <h5 class="card-title fw-bold">Минеральные удобрения</h5>
-                  <p class="card-text small text-muted">
-                    Содержат необходимые минералы для растений, такие как азот,
-                    фосфор и калий. Эффективны для быстрого роста.
-                  </p>
-                  <a
-                    href="mineral-fertilizers.html"
-                    class="btn btn-outline-success"
-                    >Подробнее</a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <!-- Удобрение 3: Азотные -->
-            <div class="col-md-6 col-lg-4">
-              <div class="card fertilizer-card border-0 shadow-sm rounded-4">
-                <div class="card-body-f">
-                  <i class="bi bi-bar-chart-line fs-1 text-success mb-3"></i>
-                  <h5 class="card-title fw-bold">Азотные удобрения</h5>
-                  <p class="card-text small text-muted">
-                    Обогащают почву азотом, который необходим для роста зеленой
-                    массы растений.
-                  </p>
-                  <a
-                    href="nitrogen-fertilizers.html"
-                    class="btn btn-outline-success"
-                    >Подробнее</a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <!-- Удобрение 4: Фосфорные -->
-            <div class="col-md-6 col-lg-4">
-              <div class="card fertilizer-card border-0 shadow-sm rounded-4">
-                <div class="card-body-f">
-                  <i class="bi bi-flower1 fs-1 text-success mb-3"></i>
-                  <h5 class="card-title fw-bold">Фосфорные удобрения</h5>
-                  <p class="card-text small text-muted">
-                    Способствуют развитию корневой системы и повышению
-                    урожайности.
-                  </p>
-                  <a
-                    href="phosphorus-fertilizers.html"
-                    class="btn btn-outline-success"
-                    >Подробнее</a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <!-- Удобрение 5: Калийные -->
-            <div class="col-md-6 col-lg-4">
-              <div class="card fertilizer-card border-0 shadow-sm rounded-4">
-                <div class="card-body-f">
-                  <i class="bi bi-sun-fill fs-1 text-success mb-3"></i>
-                  <h5 class="card-title fw-bold">Калийные удобрения</h5>
-                  <p class="card-text small text-muted">
-                    Помогают растениям противостоять засухе и болезням, улучшают
-                    качество плодов.
-                  </p>
-                  <a
-                    href="potassium-fertilizers.html"
-                    class="btn btn-outline-success"
-                    >Подробнее</a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <!-- Удобрение 6: Комплексные -->
-            <div class="col-md-6 col-lg-4">
-              <div class="card fertilizer-card border-0 shadow-sm rounded-4">
-                <div class="card-body-f">
-                  <i class="bi bi-puzzle-fill fs-1 text-success mb-3"></i>
-                  <h5 class="card-title fw-bold">Комплексные удобрения</h5>
-                  <p class="card-text small text-muted">
-                    Содержат несколько питательных элементов, обеспечивающих
-                    сбалансированное питание растений.
-                  </p>
-                  <a
-                    href="complex-fertilizers.html"
-                    class="btn btn-outline-success"
-                    >Подробнее</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </main>
+      <main></main>
     </div>
 
     <footer class="footer rounded-1 text-dark pt-5">
