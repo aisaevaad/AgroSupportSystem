@@ -42,7 +42,6 @@ h5 {
 
 .carousel-item {
   height: 82vh;
-  min-height: 250px;
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -250,4 +249,62 @@ header {
 
 .card-body-f {
   height: 280px;
+}
+
+/* стили для страниц про культуры */
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-button {
+  background-color: #f3fdef;
+  color: #333;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-button:hover {
+  background-color: #e9f7e0;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.list-group-item {
+  border: none;
+  padding: 0.75rem 0;
+}
+
+.list-group-item i {
+  flex-shrink: 0;
+}
+
+.nav-tabs .nav-link {
+  transition: color 0.3s ease, color 0.3s ease;
+}
+
+.nav-tabs .nav-link:hover {
+  color: #155724 !important;
+  font-weight: 500;
+}
+
+.btn-corusel .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23198754' viewBox='0 0 8 8'%3E%3Cpath d='M4.354 0.146a.5.5 0 0 0-.708 0L.146 3.646a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L1.707 4l2.647-2.646a.5.5 0 0 0 0-.708z'/%3E%3C/svg%3E");
+}
+
+.btn-corusel .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23198754' viewBox='0 0 8 8'%3E%3Cpath d='M3.646 0.146a.5.5 0 0 1 .708 0l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L6.293 4 3.646 1.354a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+}
+
+.gallery-section {
+  margin-bottom: 0;
+  height: 450px;
 }

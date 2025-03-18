@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>Помидоры</title>
   </head>
+
   <body>
     <header class="sticky-top navbar-expand-lg navbar-light">
       <nav class="navbar">
@@ -54,9 +55,19 @@
                 </a>
 
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <li><a class="dropdown-item bg-success active" href="tomatoes.html">Помидоры</a></li>
-                  <li><a class="dropdown-item" href="cucumbers.html">Огурцы</a></li>
-                  <li><a class="dropdown-item" href="eggplants.html">Баклажаны</a></li>
+                  <li>
+                    <a
+                      class="dropdown-item bg-success active"
+                      href="tomatoes.html"
+                      >Помидоры</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="cucumbers.html">Огурцы</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="eggplants.html">Баклажаны</a>
+                  </li>
                 </ul>
               </div>
               <li class="nav-item"></li>
@@ -73,12 +84,36 @@
                 </a>
 
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <li><a class="dropdown-item" href="organic-fertilizers.html">Органические</a></li>
-                  <li><a class="dropdown-item" href="mineral-fertilizers.html">Минеральные</a></li>
-                  <li><a class="dropdown-item" href="nitrogen-fertilizers.html">Азотные</a></li>
-                  <li><a class="dropdown-item" href="phosphorus-fertilizers.html">Фосфорные</a></li>
-                  <li><a class="dropdown-item" href="potassium-fertilizers.html">Калийные</a></li>
-                  <li><a class="dropdown-item" href="complex-fertilizers.html">Комплексные</a></li>
+                  <li>
+                    <a class="dropdown-item" href="organic-fertilizers.html"
+                      >Органические</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="mineral-fertilizers.html"
+                      >Минеральные</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="nitrogen-fertilizers.html"
+                      >Азотные</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="phosphorus-fertilizers.html"
+                      >Фосфорные</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="potassium-fertilizers.html"
+                      >Калийные</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="complex-fertilizers.html"
+                      >Комплексные</a
+                    >
+                  </li>
                 </ul>
               </div>
             </ul>
@@ -88,93 +123,655 @@
     </header>
 
     <div class="container">
-      <main></main>
-    </div>
+      <main>
+        <div class="container">
+          <!-- Заголовок страницы -->
+          <h1 class="text-center fw-bold mb-4 mt-4">Помидоры</h1>
+          <p class="text-center lead text-muted mb-5">
+            Полное руководство по выращиванию, уходу и сбору урожая помидоров.
+          </p>
 
-    <footer class="footer rounded-1 text-dark pt-5">
-      <div class="container">
-        <div class="row mb-4">
-          <div class="col-md-4">
-            <h4 class="fw-bold text-success">АгроКалькулятор</h4>
-            <p class="small text-muted">
-              Информационно-аналитическая система поддержки принятия решений при
-              выращивании овощных культур с интеграцией модуля расчета
-              удобрений.
-            </p>
+          <!-- Основная информация -->
+          <div class="row g-4 align-items-center mb-5">
+            <div class="col-md-6">
+              <img
+                src="https://c1.peakpx.com/wallpaper/915/8/864/tomato-fruits-fresh-sweet-juicy-wallpaper.jpg"
+                alt="Помидоры"
+                class="img-fluid rounded-4 shadow-sm"
+              />
+            </div>
+            <div class="col-md-6">
+              <h3 class="fw-bold mb-3">Общая информация</h3>
+              <p class="text-muted medium">
+                Помидоры — одна из самых популярных овощных культур,
+                выращиваемых в садах и теплицах. Они богаты витаминами (особенно
+                витамином C) и антиоксидантами, что делает их не только
+                вкусными, но и полезными.
+              </p>
+              <ul class="list-unstyled text-muted medium">
+                <li>
+                  <i class="bi bi-check-circle-fill text-success me-2"></i
+                  >Лучшее время для посадки: конец апреля — начало мая.
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill text-success me-2"></i
+                  >Оптимальная температура: +20°C — +25°C.
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill text-success me-2"></i>Срок
+                  созревания: 90–120 дней после посадки.
+                </li>
+              </ul>
+            </div>
           </div>
 
-          <div class="col-md-3 ps-5 ms-5">
-            <h5 class="fw-bold text-success">Навигация</h5>
-            <ul class="list-unstyled small">
-              <li>
-                <a href="index.html" class="nav-link text-decoration-none">Главная</a>
+          <!-- Основные характеристики культуры -->
+          <section class="mb-5">
+            <h3 class="fw-bold mb-3">Основные характеристики культуры</h3>
+            <div class="row g-4">
+              <div class="col-md-4">
+                <div class="card border-0 shadow-sm rounded-4">
+                  <div class="card-body text-center">
+                    <i
+                      class="bi bi-thermometer-half fs-1 text-success mb-3"
+                    ></i>
+                    <h5 class="fw-bold">Температура</h5>
+                    <p class="text-muted medium">
+                      Оптимальная температура: +20°C — +25°C.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card border-0 shadow-sm rounded-4">
+                  <div class="card-body text-center">
+                    <i class="bi bi-calendar-date fs-1 text-success mb-3"></i>
+                    <h5 class="fw-bold">Сроки посадки</h5>
+                    <p class="text-muted medium">
+                      Лучшее время для посадки: конец апреля — начало мая.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card border-0 shadow-sm rounded-4">
+                  <div class="card-body text-center">
+                    <i class="bi bi-hourglass-split fs-1 text-success mb-3"></i>
+                    <h5 class="fw-bold">Вегетационный период</h5>
+                    <p class="text-muted medium">90–120 дней после посадки.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Требования к почве -->
+          <section class="mb-5">
+            <h3 class="fw-bold mb-3">Требования к почве</h3>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item d-flex align-items-center">
+                <i class="bi bi-droplet-fill text-success me-3 fs-5"></i>
+                <span class="text-muted medium">Оптимальный pH: 6.0–7.0.</span>
               </li>
-              <li>
-                <a href="cultures.html" class="nav-link text-decoration-none"
-                  >Справочник культур</a
+              <li class="list-group-item d-flex align-items-center">
+                <i class="bi bi-box-seam text-success me-3 fs-5"></i>
+                <span class="text-muted medium"
+                  >Тип почвы: легкая суглинистая или песчаная.</span
                 >
               </li>
-              <li>
-                <a href="agro-calc.html" class="nav-link text-decoration-none"
-                  >Калькулятор удобрений</a
-                >
-              </li>
-              <li>
-                <a href="fertilizers.html" class="nav-link text-decoration-none"
-                  >Удобрения</a
-                >
-              </li>
-              <li>
-                <a href="about.html" class="nav-link text-decoration-none"
-                  >О проекте</a
+              <li class="list-group-item d-flex align-items-center">
+                <i class="bi bi-tools text-success me-3 fs-5"></i>
+                <span class="text-muted medium"
+                  >Необходимость предпосевной подготовки: перекопка и внесение
+                  органики.</span
                 >
               </li>
             </ul>
-          </div>
+          </section>
 
-          <div class="col-md-4 ps-5 ms-5">
-            <h5 class="fw-bold text-success">Контакты</h5>
-            <ul class="list-unstyled small">
-              <li>
-                <i class="bi bi-envelope me-2 text-success"></i
-                ><a
-                  href="mailto:agrosupportsystem@mail.ru"
-                  class="text-muted text-decoration-none"
-                  >agrosupportsystem@mail.ru</a
+          <!-- Условия выращивания -->
+          <section class="mb-5">
+            <h3 class="fw-bold mb-4">Условия выращивания</h3>
+            <div class="row g-4">
+              <div class="col-md-4">
+                <div class="card border-0 shadow-sm rounded-4">
+                  <div class="card-body text-center">
+                    <i class="bi bi-sun fs-1 text-success mb-3"></i>
+                    <h5 class="fw-bold">Освещение</h5>
+                    <p class="text-muted medium">
+                      Помидоры любят яркий солнечный свет. Минимум 6–8 часов
+                      прямого солнца в день.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card border-0 shadow-sm rounded-4">
+                  <div class="card-body text-center">
+                    <i class="bi bi-droplet fs-1 text-success mb-3"></i>
+                    <h5 class="fw-bold">Полив</h5>
+                    <p class="text-muted medium">
+                      Регулярный полив под корень. Избегайте переувлажнения
+                      почвы.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card border-0 shadow-sm rounded-4">
+                  <div class="card-body text-center">
+                    <i class="bi bi-box-seam fs-1 text-success mb-3"></i>
+                    <h5 class="fw-bold">Удобрения</h5>
+                    <p class="text-muted medium">
+                      Используйте комплексные удобрения каждые 2–3 недели.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Подготовка, посадка и уход -->
+          <section id="plantingAndCare" class="mb-5">
+            <div class="row">
+              <!-- Подготовка и посадка -->
+              <div class="col-md-6">
+                <h3 class="fw-bold mb-4">Подготовка и посадка</h3>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    <strong>Предпосевная подготовка:</strong> Выбирайте
+                    качественный семенной материал и проводите проращивание за
+                    6–8 недель до высадки.
+                  </li>
+                  <li class="list-group-item">
+                    <strong>Оптимальное расстояние:</strong> Расстояние 50–70 см
+                    между растениями улучшает циркуляцию воздуха.
+                  </li>
+                  <li class="list-group-item">
+                    <strong>Подготовка грядки:</strong> Обогащение почвы
+                    удобрениями и корректировка pH для наилучшего старта.
+                  </li>
+                </ul>
+              </div>
+              <!-- Уход за растениями -->
+              <div class="col-md-6">
+                <h3 class="fw-bold mb-4">Комплексный уход</h3>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    <strong>Регулярный полив:</strong> Поддержание оптимального
+                    уровня влажности в зависимости от стадии роста.
+                  </li>
+                  <li class="list-group-item">
+                    <strong>Подкормка:</strong> Использование комплексных
+                    удобрений для стимулирования плодоношения.
+                  </li>
+                  <li class="list-group-item">
+                    <strong>Обрезка и подвязка:</strong> Формирование кроны для
+                    лучшей аэрации и поддержки стеблей.
+                  </li>
+                  <li class="list-group-item">
+                    <strong>Защита от вредителей:</strong> Применение
+                    биологических и профилактических средств для предотвращения
+                    заболеваний.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <!-- Выращивание -->
+          <section class="mb-5">
+            <h3 class="fw-bold mb-3">Выращивание</h3>
+            <div class="accordion" id="faqAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button fs-4 custom-accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="false"
+                    aria-controls="collapseOne"
+                  >
+                    Схема посадки
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#faqAccordion"
                 >
+                  <div class="accordion-body">
+                    Расстояние между растениями: 40–50 см. Между рядами: 60–70
+                    см.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button fs-4 custom-accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Особенности ухода
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Регулярный полив под корень, прополка сорняков, пасынкование
+                    для формирования куста.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Вкладки с советами -->
+          <section class="mb-5">
+            <h3 class="fw-bold mb-4">Советы</h3>
+            <ul class="nav nav-tabs mb-3" id="careTabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active text-black"
+                  id="watering-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#watering"
+                  type="button"
+                  role="tab"
+                  aria-controls="watering"
+                  aria-selected="true"
+                >
+                  Полив
+                </button>
               </li>
-              <li>
-                <i class="bi bi-telephone me-2 text-success"></i
-                ><a
-                  href="tel:+797777777"
-                  class="text-muted text-decoration-none"
-                  >+7 (977) 777-77-77</a
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link text-black"
+                  id="fertilizing-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#fertilizing"
+                  type="button"
+                  role="tab"
+                  aria-controls="fertilizing"
+                  aria-selected="false"
                 >
+                  Удобрения
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link text-black"
+                  id="diseases-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#diseases"
+                  type="button"
+                  role="tab"
+                  aria-controls="diseases"
+                  aria-selected="false"
+                >
+                  Болезни
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link text-black"
+                  id="vermin-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#vermin"
+                  type="button"
+                  role="tab"
+                  aria-controls="vermin"
+                  aria-selected="false"
+                >
+                  Вредители
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link text-black"
+                  id="harvest-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#harvest"
+                  type="button"
+                  role="tab"
+                  aria-controls="harvest"
+                  aria-selected="false"
+                >
+                  Сбор урожая
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link text-black"
+                  id="storage-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#storage"
+                  type="button"
+                  role="tab"
+                  aria-controls="storage"
+                  aria-selected="false"
+                >
+                  Хранение
+                </button>
               </li>
             </ul>
-            <div class="mt-3">
-              <a href="#" class="text-success me-3"
-                ><i class="bi bi-telegram fs-5"></i
-              ></a>
-              <a href="#" class="text-success me-3"
-                ><i class="bi bi-whatsapp fs-5"></i
-              ></a>
-              <a href="#" class="text-success me-3"
-                ><i class="bi bi-person-plus-fill fs-5"></i
-              ></a>
+
+            <div class="tab-content" id="careTabsContent">
+              <div
+                class="tab-pane fade show active"
+                id="watering"
+                role="tabpanel"
+                aria-labelledby="watering-tab"
+              >
+                <p class="text-muted medium">
+                  Поливайте помидоры утром или вечером, чтобы избежать испарения
+                  воды. Используйте капельный полив для экономии ресурсов.
+                </p>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="fertilizing"
+                role="tabpanel"
+                aria-labelledby="fertilizing-tab"
+              >
+                <p class="text-muted medium">
+                  Применяйте органические удобрения в начале сезона и
+                  минеральные во время цветения.
+                </p>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="diseases"
+                role="tabpanel"
+                aria-labelledby="diseases-tab"
+              >
+                <p class="text-muted medium">
+                  Для профилактики фитофтороза используйте биологические
+                  препараты и соблюдайте правила севооборота.
+                </p>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="vermin"
+                role="tabpanel"
+                aria-labelledby="vermin-tab"
+              >
+                <p class="text-muted medium">Вредители</p>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="harvest"
+                role="tabpanel"
+                aria-labelledby="harvest-tab"
+              >
+                <p class="text-muted medium">Сбор урожая</p>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="storage"
+                role="tabpanel"
+                aria-labelledby="storage-tab"
+              >
+                <p class="text-muted medium">Хранение</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Галерея -->
+          <section class="gallery-section">
+            <h3 class="fw-bold mb-3">Галерея</h3>
+            <div
+              id="multiItemCarousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <!-- Первый слайд: 3 изображения -->
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="card border-0">
+                        <img
+                          src="https://c1.peakpx.com/wallpaper/915/8/864/tomato-fruits-fresh-sweet-juicy-wallpaper.jpg"
+                          class="card-img-top rounded-4 shadow-sm"
+                          alt="Помидоры 1"
+                        />
+                        <div class="card-body p-2 text-center">
+                          <p class="card-text small">Помидоры 1</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card border-0">
+                        <img
+                          src="https://c1.peakpx.com/wallpaper/915/8/864/tomato-fruits-fresh-sweet-juicy-wallpaper.jpg"
+                          class="card-img-top rounded-4 shadow-sm"
+                          alt="Помидоры 2"
+                        />
+                        <div class="card-body p-2 text-center">
+                          <p class="card-text small">Помидоры 2</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card border-0">
+                        <img
+                          src="https://c1.peakpx.com/wallpaper/915/8/864/tomato-fruits-fresh-sweet-juicy-wallpaper.jpg"
+                          class="card-img-top rounded-4 shadow-sm"
+                          alt="Помидоры 3"
+                        />
+                        <div class="card-body p-2 text-center">
+                          <p class="card-text small">Помидоры 3</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Второй слайд: дополнительные изображения, если их больше 3 -->
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="card border-0">
+                        <img
+                          src="https://c1.peakpx.com/wallpaper/915/8/864/tomato-fruits-fresh-sweet-juicy-wallpaper.jpg"
+                          class="card-img-top rounded-4 shadow-sm"
+                          alt="Помидоры 4"
+                        />
+                        <div class="card-body p-2 text-center">
+                          <p class="card-text small">Помидоры 4</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card border-0">
+                        <img
+                          src="https://c1.peakpx.com/wallpaper/915/8/864/tomato-fruits-fresh-sweet-juicy-wallpaper.jpg"
+                          class="card-img-top rounded-4 shadow-sm"
+                          alt="Помидоры 5"
+                        />
+                        <div class="card-body p-2 text-center">
+                          <p class="card-text small">Помидоры 5</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card border-0">
+                        <img
+                          src="https://c1.peakpx.com/wallpaper/915/8/864/tomato-fruits-fresh-sweet-juicy-wallpaper.jpg"
+                          class="card-img-top rounded-4 shadow-sm"
+                          alt="Помидоры 6"
+                        />
+                        <div class="card-body p-2 text-center">
+                          <p class="card-text small">Помидоры 6</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Кнопки управления -->
+              <div class="btn-corusel">
+                <button
+                  class="carousel-control-prev mt-4"
+                  type="button"
+                  data-bs-target="#multiItemCarousel"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Предыдущий</span>
+                </button>
+                <button
+                  class="carousel-control-next mt-4"
+                  type="button"
+                  data-bs-target="#multiItemCarousel"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Следующий</span>
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <!-- Полезные ресурсы -->
+          <section id="resources" class="mb-5">
+            <h3 class="fw-bold mb-4">Полезные ресурсы</h3>
+            <div class="list-group">
+              <a
+                href="https://www.agronomy.ru"
+                class="list-group-item list-group-item-action d-flex align-items-center"
+              >
+                <i class="bi bi-book fs-4 text-success me-3 ms-3"></i>
+                <div>
+                  <h5 class="mb-1">Агрономия и растениеводство</h5>
+                  <small
+                    >Проверенные материалы и исследования по современной
+                    агротехнике.</small
+                  >
+                </div>
+              </a>
+              <a
+                href="https://www.horticulture.ru"
+                class="list-group-item list-group-item-action d-flex align-items-center"
+              >
+                <i class="bi bi-flower1 fs-4 text-success me-3 ms-3"></i>
+                <div>
+                  <h5 class="mb-1">Садоводство и огородничество</h5>
+                  <small
+                    >Советы и руководства для эффективного выращивания
+                    культур.</small
+                  >
+                </div>
+              </a>
+            </div>
+          </section>
+
+          <!-- js for boorstrap -->
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        </div>
+      </main>
+      <footer class="footer rounded-1 text-dark pt-5">
+        <div class="container">
+          <div class="row mb-4">
+            <div class="col-md-4">
+              <h4 class="fw-bold text-success">АгроКалькулятор</h4>
+              <p class="small text-muted">
+                Информационно-аналитическая система поддержки принятия решений
+                при выращивании овощных культур с интеграцией модуля расчета
+                удобрений.
+              </p>
+            </div>
+
+            <div class="col-md-3 ps-5 ms-5">
+              <h5 class="fw-bold text-success">Навигация</h5>
+              <ul class="list-unstyled small">
+                <li>
+                  <a href="index.html" class="nav-link text-decoration-none"
+                    >Главная</a
+                  >
+                </li>
+                <li>
+                  <a href="cultures.html" class="nav-link text-decoration-none"
+                    >Справочник культур</a
+                  >
+                </li>
+                <li>
+                  <a href="agro-calc.html" class="nav-link text-decoration-none"
+                    >Калькулятор удобрений</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="fertilizers.html"
+                    class="nav-link text-decoration-none"
+                    >Удобрения</a
+                  >
+                </li>
+                <li>
+                  <a href="about.html" class="nav-link text-decoration-none"
+                    >О проекте</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-md-4 ps-5 ms-5">
+              <h5 class="fw-bold text-success">Контакты</h5>
+              <ul class="list-unstyled small">
+                <li>
+                  <i class="bi bi-envelope me-2 text-success"></i
+                  ><a
+                    href="mailto:agrosupportsystem@mail.ru"
+                    class="text-muted text-decoration-none"
+                    >agrosupportsystem@mail.ru</a
+                  >
+                </li>
+                <li>
+                  <i class="bi bi-telephone me-2 text-success"></i
+                  ><a
+                    href="tel:+797777777"
+                    class="text-muted text-decoration-none"
+                    >+7 (977) 777-77-77</a
+                  >
+                </li>
+              </ul>
+              <div class="mt-3">
+                <a href="#" class="text-success me-3"
+                  ><i class="bi bi-telegram fs-5"></i
+                ></a>
+                <a href="#" class="text-success me-3"
+                  ><i class="bi bi-whatsapp fs-5"></i
+                ></a>
+                <a href="#" class="text-success me-3"
+                  ><i class="bi bi-person-plus-fill fs-5"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row border-top py-4">
+            <div class="col text-center small text-muted">
+              &copy; 2025 AgroSupportSystem. Все права защищены.
             </div>
           </div>
         </div>
-
-        <div class="row border-top py-4">
-          <div class="col text-center small text-muted">
-            &copy; 2025 AgroSupportSystem. Все права защищены.
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <!-- js for boorstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      </footer>
+    </div>
   </body>
 </html>
