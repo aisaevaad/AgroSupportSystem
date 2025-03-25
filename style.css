@@ -308,3 +308,7 @@ header {
   margin-bottom: 0;
   height: 450px;
 }
+
+.card-img-top {
+  height: 250px;
+}
