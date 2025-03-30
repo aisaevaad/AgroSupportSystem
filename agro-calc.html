@@ -88,7 +88,215 @@
     </header>
 
     <div class="container">
-      <main></main>
+      <main>
+        <h1 class="mt-5">Агрокалькулятор для овощных культур</h1>
+    
+        <form id="advancedCalc" class="row g-3">
+          <div class="col-md-6">
+            <label class="form-label">Культура:</label>
+            <select id="crop" class="form-select" required>
+              <option value="">-- Выберите --</option>
+              <option value="tomato">Помидоры</option>
+              <option value="cucumber">Огурцы</option>
+              <option value="eggplant">Баклажаны</option>
+            </select>
+          </div>
+    
+          <div class="col-md-6">
+            <label class="form-label">Площадь (м²):</label>
+            <input type="number" id="area" class="form-control" min="1" required>
+          </div>
+    
+          <div class="col-md-6">
+            <label class="form-label">Тип почвы:</label>
+            <select id="soilType" class="form-select" required>
+              <option value="loam">Суглинок</option>
+              <option value="sand">Песчаная</option>
+              <option value="clay">Глинистая</option>
+            </select>
+          </div>
+    
+          <div class="col-md-6">
+            <label class="form-label">Уровень плодородия:</label>
+            <select id="fertility" class="form-select" required>
+              <option value="low">Низкий</option>
+              <option value="medium">Средний</option>
+              <option value="high">Высокий</option>
+            </select>
+          </div>
+    
+          <div class="col-12">
+            <button type="submit" class="btn btn-success">Рассчитать</button>
+          </div>
+        </form>
+    
+        <div id="results" class="mt-4 d-none">
+          <h3>Рекомендации по удобрениям:</h3>
+          <div id="fertilizerDetails"></div>
+          <div id="applicationTips"></div>
+        </div>
+        
+        <div class="accordion" id="calcLogic">
+          <div class="card mt-5">
+            <div class="card-header bg-success text-white">
+              <h3 class="mb-0">Как работает калькулятор?</h3>
+            </div>
+            <div class="accordion" id="calcLogic">
+              <!-- Базовые нормы -->
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button class="fs-4 btn text-decoration-none text-success" data-bs-toggle="collapse" data-bs-target="#baseNorms">
+                      Базовые нормы удобрений
+                    </button>
+                  </h5>
+                </div>
+                <div id="baseNorms" class="collapse show" data-bs-parent="#calcLogic">
+                  <div class="card-body">
+                    <p>Для каждой культуры заданы эталонные нормы NPK на 1 м²:</p>
+                    <ul>
+                      <li>Помидоры: 30 г N / 40 г P / 50 г K</li>
+                      <li>Огурцы: 40 г N / 30 г P / 35 г K</li>
+                      <li>Баклажаны: 35 г N / 35 г P / 40 г K</li>
+                    </ul>
+                    <p>Нормы распределены по фенологическим фазам:</p>
+                    <div class="table-responsive">
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th>Фаза</th>
+                            <th>Азот (N)</th>
+                            <th>Фосфор (P)</th>
+                            <th>Калий (K)</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Вегетация/Рост</td>
+                            <td>50-60%</td>
+                            <td>20-30%</td>
+                            <td>10-20%</td>
+                          </tr>
+                          <tr>
+                            <td>Цветение</td>
+                            <td>20-30%</td>
+                            <td>40-50%</td>
+                            <td>20-30%</td>
+                          </tr>
+                          <tr>
+                            <td>Плодоношение/Созревание</td>
+                            <td>10-20%</td>
+                            <td>20-30%</td>
+                            <td>50-60%</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Корректировки почвы -->
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0">
+                    <button class="fs-4 btn text-decoration-none text-success" data-bs-toggle="collapse" data-bs-target="#soilAdjust">
+                      Корректировка на тип почвы
+                    </button>
+                  </h5>
+                </div>
+                <div id="soilAdjust" class="collapse" data-bs-parent="#calcLogic">
+                  <div class="card-body">
+                    <p>Коэффициенты корректировки базовых норм:</p>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="card bg-light">
+                          <div class="card-body text-center">
+                            <h5>Песчаная</h5>
+                            <p>+20-30% к нормам</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="card bg-light">
+                          <div class="card-body text-center">
+                            <h5>Суглинок</h5>
+                            <p>Базовые нормы</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="card bg-light">
+                          <div class="card-body text-center">
+                            <h5>Глинистая</h5>
+                            <p>-10-20% к нормам</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Учет плодородия -->
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h5 class="mb-0">
+                    <button class="fs-4 btn text-decoration-none text-success" data-bs-toggle="collapse" data-bs-target="#fertilityAdjust">
+                      Учет плодородия почвы
+                    </button>
+                  </h5>
+                </div>
+                <div id="fertilityAdjust" class="collapse" data-bs-parent="#calcLogic">
+                  <div class="card-body">
+                    <div class="alert alert-warning">
+                      <strong>Важно!</strong> Уровень плодородия влияет на общую потребность:
+                    </div>
+                    <ul class="list-group">
+                      <li class="list-group-item d-flex justify-content-between ms-5 me-5">
+                        Низкий
+                        <span class="badge bg-danger">+30%</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between ms-5 me-5">
+                        Средний
+                        <span class="badge bg-success">Стандарт</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between ms-5 me-5">
+                        Высокий
+                        <span class="badge bg-info">-30%</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Научное обоснование -->
+              <div class="card">
+                <div class="card-header" id="headingFour">
+                  <h5 class="mb-0">
+                    <button class="fs-4 btn text-decoration-none text-success" data-bs-toggle="collapse" data-bs-target="#scienceBase">
+                      Научное обоснование
+                    </button>
+                  </h5>
+                </div>
+                <div id="scienceBase" class="collapse" data-bs-parent="#calcLogic">
+                  <div class="card-body">
+                    <p>Расчеты основаны на:</p>
+                    <ol>
+                      <li>Методиках ВНИИА (Всероссийский НИИ агрономии)</li>
+                      <li>Рекомендациях по точному земледелию</li>
+                      <li>Фенологических наблюдениях за культурами</li>
+                    </ol>
+                    <div class="alert alert-info">
+                      Для профессионального использования рекомендуется дополнить анализом почвы
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
 
     <footer class="footer rounded-1 text-dark pt-5">
