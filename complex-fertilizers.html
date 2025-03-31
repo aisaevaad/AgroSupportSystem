@@ -34,9 +34,9 @@
                   >Калькулятор удобрений</a
                 >
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link" href="about.html">О проекте</a>
-              </li>
+              </li> -->
             </ul>
 
             <ul class="navbar-nav">
@@ -88,7 +88,191 @@
     </header>
 
     <div class="container">
-      <main></main>
+      <main>
+        <div class="container">
+          <!-- Заголовок страницы -->
+          <h2 class="text-center fw-bold mt-4 mb-4">Комплексные удобрения</h2>
+          <p class="text-center lead text-muted mb-5">
+            Полное руководство по использованию комплексных удобрений для повышения урожайности.
+          </p>
+          <!-- Основная информация -->
+          <section class="mb-5">
+            <h3 class="fw-bold mb-3">Что такое комплексные удобрения?</h3>
+            <p class="text-muted medium">
+              <b>Комплексные удобрения</b> — это многокомпонентные смеси, содержащие два или более питательных элемента
+              (азот, фосфор, калий, микроэлементы) в сбалансированной пропорции.
+            </p>
+            <p class="text-muted medium">
+              Они обеспечивают растения всеми необходимыми веществами в оптимальном соотношении, упрощая процесс подкормки.
+              Эти удобрения могут выпускаться в виде гранул, порошков или растворов и подходят для всех типов культур.
+            </p>
+            <p class="text-muted medium">
+              Комплексные удобрения делятся на <b>полные</b> (содержащие NPK) и <b>специализированные</b> (например, для
+              плодовых, цветочных или овощных культур). Их применение снижает риск дисбаланса питательных веществ и экономит
+              время садовода.
+            </p>
+          </section>
+          <!-- Виды комплексных удобрений -->
+          <section class="mb-5">
+            <h3 class="fw-bold mb-4">Основные виды комплексных удобрений</h3>
+            <div class="row g-4">
+              <div class="col-md-4">
+                <div class="card border-0 shadow-sm rounded-4">
+                  <div class="card-body text-center">
+                    <i class="bi bi-box-seam fs-1 text-success mb-3"></i>
+                    <h5 class="fw-bold">NPK-удобрения</h5>
+                    <p class="text-muted medium">
+                      Содержат азот (N), фосфор (P) и калий (K). Пример: NPK 10-20-30 для плодовых культур.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card border-0 shadow-sm rounded-4">
+                  <div class="card-body text-center">
+                    <i class="bi bi-flower1 fs-1 text-success mb-3"></i>
+                    <h5 class="fw-bold">Микроэлементные комплексы</h5>
+                    <p class="text-muted medium">
+                      Добавляют железо, магний, цинк и другие микроэлементы. Пример: «Кемира Универсал».
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card border-0 shadow-sm rounded-4">
+                  <div class="card-body text-center">
+                    <i class="bi bi-droplet-half fs-1 text-success mb-3"></i>
+                    <h5 class="fw-bold">Жидкие комплексы</h5>
+                    <p class="text-muted medium">
+                      Растворы для корневых и внекорневых подкормок. Пример: «Агрикола».
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Преимущества использования -->
+          <section class="mb-5">
+            <h3 class="fw-bold mb-4">Преимущества комплексных удобрений</h3>
+            <ul class="list-unstyled d-flex flex-wrap gap-3">
+              <!-- 1. Сбалансированный состав -->
+              <li class="p-3 bg-light rounded shadow-sm">
+                <i class="bi bi-check-circle text-success me-2"></i>
+                <span class="fw-bold">Сбалансированный состав:</span>
+                Оптимальное соотношение макро- и микроэлементов.
+              </li>
+              <!-- 2. Удобство применения -->
+              <li class="p-3 bg-light rounded shadow-sm">
+                <i class="bi bi-hand-thumbs-up text-success me-2"></i>
+                <span class="fw-bold">Удобство применения:</span>
+                Одна подкормка заменяет несколько простых удобрений.
+              </li>
+              <!-- 3. Универсальность -->
+              <li class="p-3 bg-light rounded shadow-sm">
+                <i class="bi bi-globe2 text-success me-2"></i>
+                <span class="fw-bold">Универсальность:</span>
+                Подходят для разных культур и типов почв.
+              </li>
+              <!-- 4. Эффективность -->
+              <li class="p-3 bg-light rounded shadow-sm">
+                <i class="bi bi-graph-up text-success me-2"></i>
+                <span class="fw-bold">Эффективность:</span>
+                Быстро усваиваются растениями, повышая урожайность на 30–50%.
+              </li>
+              <!-- 5. Экономия времени -->
+              <li class="p-3 bg-light rounded shadow-sm">
+                <i class="bi bi-clock-history text-success me-2"></i>
+                <span class="fw-bold">Экономия времени:</span>
+                Минимизируют количество обработок почвы.
+              </li>
+            </ul>
+          </section>
+          <!-- Как использовать -->
+          <section class="mb-5">
+            <h3 class="fw-bold mb-4">Как использовать комплексные удобрения?</h3>
+            <div class="accordion" id="usageAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button fs-4 custom-accordion-button collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false">
+                    Подготовка почвы
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                  data-bs-parent="#usageAccordion">
+                  <div class="accordion-body">
+                    Для основного внесения используйте гранулированные NPK-удобрения (например, 20-20-20). Норма — 30–40
+                    г/м². Гранулы равномерно рассыпают по поверхности грядки и заделывают в почву на глубину 5–10 см при
+                    перекопке. Для кислых почв выбирайте удобрения с повышенным содержанием калия и микроэлементов.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button fs-4 custom-accordion-button collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false">
+                    Подкормка во время роста
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#usageAccordion">
+                  <div class="accordion-body">
+                    Для корневых подкормок разводите 1 столовую ложку удобрения в 10 л воды. Норма — 1–2 л на растение. Для
+                    внекорневых опрыскиваний концентрацию снижают в 2 раза. В период вегетации используйте азотные комплексы
+                    (например, 30-10-10), во время цветения — фосфорно-калийные (10-30-30).
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button fs-4 custom-accordion-button collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false">
+                    Профилактика передозировки
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#usageAccordion">
+                  <div class="accordion-body">
+                    Строго соблюдайте дозировку, указанную на упаковке. Избыток удобрений вызывает хлороз листьев и ожог
+                    корней. При признаках гиперфитотоксичности (пожелтение, скручивание листьев) промойте почву водой и
+                    временно прекратите подкормки.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Популярные комплексные удобрения -->
+          <section class="mb-5">
+            <h3 class="fw-bold mb-4">Популярные комплексные удобрения</h3>
+            <table class="table table-bordered table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">Название</th>
+                  <th scope="col">Состав</th>
+                  <th scope="col">Рекомендации</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>NPK 10-10-10</td>
+                  <td>10% азота, 10% фосфора, 10% калия</td>
+                  <td>Универсальное удобрение для всех культур.</td>
+                </tr>
+                <tr>
+                  <td>Кемира Универсал</td>
+                  <td>NPK + микроэлементы</td>
+                  <td>Для овощей, цветов и плодовых деревьев.</td>
+                </tr>
+                <tr>
+                  <td>Агрикола</td>
+                  <td>Азот, фосфор, калий, гуматы</td>
+                  <td>Жидкое удобрение для подкормок.</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </div>
+      </main>
     </div>
 
     <footer class="footer rounded-1 text-dark pt-5">
@@ -124,11 +308,11 @@
                   >Удобрения</a
                 >
               </li>
-              <li>
+              <!-- <li>
                 <a href="about.html" class="nav-link text-decoration-none"
                   >О проекте</a
                 >
-              </li>
+              </li> -->
             </ul>
           </div>
 

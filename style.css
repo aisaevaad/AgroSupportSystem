@@ -320,5 +320,6 @@ header {
   border-radius: 5px;
 }
 
-
-
+th {
+  background-color: #dbfcce !important;
+}
