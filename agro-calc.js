@@ -21,8 +21,8 @@ const cropData = {
             { phase: 'Плодоношение', N: 0.2, P: 0.3, K: 0.5 }
         ]
     },
-    eggplant: {
-        name: 'Баклажаны',
+    pepper: {
+        name: 'Перец овощной',
         baseN: 35,
         baseP: 35,
         baseK: 40,
